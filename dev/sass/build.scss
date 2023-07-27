@@ -7,7 +7,7 @@
     }
     .template-plan-info {
         width: 100%;
-        margin: 60px 0 60px 30px;
+        margin: 61px 442px 157px 30px;
     }
 } 
 
@@ -20,31 +20,15 @@
     transition: .3s;
 }
 
-
-
-.build-1 {
+.floor {
+    fill: #df249714;
     &:hover {
-        fill: #37c720;
-        stroke: #154a04;
-        stroke-width: 3px;
+        fill: rgba(61, 253, 3, 0.614);
+        stroke: #120d0eef;
+        stroke-width: 1px;
     }
 }
 
-.build-2 {
-    &:hover {
-        fill: #a84cb6;
-        stroke: #390139;
-        stroke-width: 2px;
-    }
-}
-
-.build-3 {
-    &:hover {
-        fill: #bcdd1c;
-        stroke: #bdff07;
-        stroke-width: 2px;
-    }
-}
 
 
 
@@ -52,7 +36,7 @@
 .build-info,
 .flats-info {
     width: 650px;
-    margin: 60px 30px 60px 60px;
+    margin: 62px 62px 55px 46px;
     padding: 60px;
     border-radius: 25px;
 
