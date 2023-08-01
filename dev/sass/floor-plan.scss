@@ -1,0 +1,85 @@
+.flat {
+    .bg-status {
+        fill: #03a9f4;
+    }
+ 
+
+    &.action{
+        .bg-status {
+            fill: #80D34E;
+        }
+    }
+
+    &.sold{
+        .bg-status {
+            fill: #ec1515;
+        }
+    }
+    &.booking{
+        .bg-status {
+            fill: #6B68FF;
+        }
+    }
+    &.active {
+        .plan {
+            fill:rgba(229, 26, 26, 0.202);
+            stroke:rgba(85, 13, 253, 0.602);
+            stroke-width: 2px;
+        }
+    }
+}
+
+.plan {
+    fill: #f0f8ff00;
+    stroke: #392222c6;
+    cursor: pointer;
+&.sold-item:hover {
+        fill: #ce37156a;
+        stroke: red;;
+        stroke-width: 2px;
+    }
+
+    &.booking-item:hover {
+        fill: #ffe60083;
+        stroke: #fcf405d2;
+        stroke-width: 3px;
+        
+    }
+
+    &.free-item:hover {
+        fill: rgba(142, 194, 240, 0.464);
+        stroke: rgb(142, 194, 240);
+        stroke-width: 3px;
+    }
+
+
+     &.action-item:hover {
+        fill: #2fff5289;
+        stroke: #2FFF50;
+         stroke-width: 3px;
+     }
+}
+
+.flat-info {
+    display: flex;
+    padding: 36px 24px;
+}
+
+.floor-plan {
+    max-width: 1440px;
+    margin: 60px auto;
+}
+
+.flat-item {
+    padding: 20px;
+    border: 1px solid;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1;
+    display: grid;
+    b {
+        font-size: 24px;
+        margin-top: auto;
+        padding-top: 18px;
+    }
+}

@@ -21,6 +21,47 @@ builds.forEach(build => {
     })
 })
 
+buildLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+        if (link.classList.contains('sold')){
+          event.preventDefault();
+        } else{
+            null //ничего
+        }
+    })
+
+})
+
+buildLinks.forEach(link => {
+    link.addEventListener('mouseover', function() {
+        if (link.classList.contains('sold')){
+            const path =  link.querySelector(".build")
+            
+            path.style.fill = "#ff41417f";
+            path.style.stroke = "#d82020";
+        }
+    })
+
+    link.addEventListener('mouseout', function() {
+        if (link.classList.contains('sold')){
+            const path =  link.querySelector(".build")
+
+            path.style.fill = "#d82020";
+            path.style.stroke = "#000000";
+        }
+    })
+
+    link.addEventListener('click', function(event){
+        if (link.classList.contains('sold')){
+            event.preventDefault();
+        } else {
+            null
+        }
+    })
+})
+
+
+
 const floors = document.querySelectorAll('.floor')
 const floorItem = document.querySelector('#floor-item')
 const flatsAll = document.querySelector('#flats-all')
@@ -37,14 +78,21 @@ floors.forEach(floor =>{
         const dataFlatsFree = floor.getAttribute('data-flats-free')
         const dataFlatsAction = floor.getAttribute('data-flats-action')
         const dataFlatsBooking = floor.getAttribute('data-flats-booking')
-        const dataFlatsSold = floor.getAttribute('data-flats-sold')
+        
         
         floorItem.innerHTML = dataFloorItem
         flatsAll.innerHTML = dataFlatsAll
         flatsFree.innerHTML = dataFlatsFree
         flatsAction.innerHTML = dataFlatsAction
         flatsBooking.innerHTML = dataFlatsBooking
-        flatsSold.innerHTML = dataFlatsSold
+      
 
     })
 })
+
+
+
+
+
+
+

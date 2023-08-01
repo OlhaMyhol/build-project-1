@@ -1,15 +1,17 @@
 .template-plan {
     display: flex;
     min-height: calc(100vh - 200px);
-
+    margin: 30px;
     &-info {
         @extend .build-info;
     }
     .template-plan-info {
+        margin: 0px 20px 0px 0px;
+        border-radius: 25px;
         width: 100%;
-        margin: 61px 442px 157px 30px;
     }
-} 
+}
+
 
 
 .build {
@@ -36,7 +38,6 @@
 .build-info,
 .flats-info {
     width: 650px;
-    margin: 62px 62px 55px 46px;
     padding: 60px;
     border-radius: 25px;
 
@@ -66,11 +67,5 @@
         font-weight: 600;
         min-height: 290px;
     }
-    .sold {
-        &:hover path{
-            cursor: no-drop;
-            fill: #D26666;
-            stroke: #D26666;
-        }
-    }
+
 }

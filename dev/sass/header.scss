@@ -6,3 +6,14 @@ header{
 		color: #fff;
 	}
 }
+
+
+
+
+.nav-item {
+    margin-right: 40px;
+	margin-top: -10px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
